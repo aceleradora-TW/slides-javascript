@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>reveal-md</title>
+        <link rel="stylesheet" href="./css/reveal.css">
+        <link rel="stylesheet" href="./theme/thoughtworks.css" id="theme">
+        <link rel="stylesheet" href="./css/highlight/zenburn.css">
+        <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
+
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section ><section data-markdown><script type="text/template"><h2 class="spaced-text">Antes de mais nada</h2>
+
+> Como descompactar um arquivo no Linux?
+</script></section><section data-markdown><script type="text/template">
+<h2 class="spaced-text">Javascript</h2>
+
+_Turma 13_
+</script></section><section data-markdown><script type="text/template">
+<h2 class="spaced-text">Dúvidas</h2>
+
+- Pq todo mundo tá usando (apesar de ser estranho)?
+- JS Puro vs Frameworks
+- Como inicia o código?
+- JS front-end vs JS back-end
+- Qual a vantagem de usar JavaScript e não outra linguagem?
+- Pq `let` e não `var`?
+- ES5 => ES6
+</script></section><section data-markdown><script type="text/template">
+<h2 class="spaced-text">O Javascript</h2>
+
+- De onde surgiu JS?
+- E o node.js?
+- JS front-end vs JS back-end
+</script></section><section data-markdown><script type="text/template">
+<h2 class="spaced-text">Pq usar?</h2>
+
+- Pq todo mundo tá usando (apesar de ser estranho)?
+- Qual a vantagem de usar JavaScript e não outra linguagem?
+</script></section><section data-markdown><script type="text/template">
+<h2 class="spaced-text">A parafernalha</h2>
+
+- JS Puro vs Frameworks
+</script></section><section data-markdown><script type="text/template">
+<h2 class="spaced-text">A Linguagem</h2>
+
+- Ecmascript (ES5, ES6)
+- Sintaxe
+</script></section><section data-markdown><script type="text/template">
+<h2 class="spaced-text">A Linguagem</h2>
+
+- Variáveis
+- Arrays
+- Objetos
+- Funções
+- ~~Classes~~
+</script></section><section data-markdown><script type="text/template">
+<h2 class="spaced-text">O Ecossistema</h2>
+
+- Como/onde inicia o código?
+</script></section><section data-markdown><script type="text/template"></script></section></section></div>
+        </div>
+
+        <script src="./lib/js/head.min.js"></script>
+        <script src="./js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: './plugin/zoom-js/zoom.js', async: true },
+              { src: './plugin/notes/notes.js', async: true },
+              { src: './plugin/math/math.js', async: true }
+            ];
+
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default', // none/fade/slide/convex/concave/zoom
+              dependencies: deps
+            };
+
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+
+            var options = {};
+            options = extend(defaultOptions, options, queryOptions);
+            Reveal.initialize(options);
+        </script>
+        
+    </body>
+</html>
